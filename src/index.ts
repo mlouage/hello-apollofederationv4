@@ -1,16 +1,16 @@
-import { readFileSync } from 'node:fs';
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-import { Resolvers } from './resolvers-types';
+import { readFileSync } from "node:fs";
+import { Resolvers } from "./resolvers-types";
 
-import users from '../data/users.json';
+import users from "../data/users.json";
 
-const typeDefs = readFileSync('./schema.graphql', 'utf8')
+const typeDefs = readFileSync("./schema.graphql", "utf8");
 
 const resolvers: Resolvers = {
   Query: {
     users: () => users,
-    user: (_, { id }) => Promise.resolve(users.find(user => user.id === id)),
+    user: (_, { id }) => users.find((user) => user.id === id),
   },
 };
 
