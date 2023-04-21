@@ -1,0 +1,100 @@
+[
+  {
+    "id": "PROD-1",
+    "name": "Product 1",
+    "description": "Product 1 description",
+    "image": "https://www.example.com/product1.jpg",
+    "price": "PR-1"
+  },
+  {
+    "id": "PROD-2",
+    "name": "Product 2",
+    "description": "Product 2 description",
+    "image": "https://www.example.com/product2.jpg",
+    "price": "PR-2"
+  },
+  {
+    "id": "PROD-3",
+    "name": "Product 3",
+    "description": "Product 3 description",
+    "image": "https://www.example.com/product3.jpg",
+    "price": "PR-3"
+  },
+  {
+    "id": "PROD-4",
+    "name": "Product 4",
+    "description": "Product 4 description",
+    "image": "https://www.example.com/product4.jpg",
+    "price": "PR-4"
+  },
+  {
+    "id": "PROD-5",
+    "name": "Product 5",
+    "description": "Product 5 description",
+    "image": "https://www.example.com/product5.jpg",
+    "price": "PR-5"
+  },
+  {
+    "id": "PROD-6",
+    "name": "Product 6",
+    "description": "Product 6 description",
+    "image": "https://www.example.com/product6.jpg",
+    "price": "PR-6"
+  },
+  {
+    "id": "PROD-7",
+    "name": "Product 7",
+    "description": "Product 7 description",
+    "image": "https://www.example.com/product7.jpg",
+    "price": "PR-7"
+  },
+  {
+    "id": "PROD-8",
+    "name": "Product 8",
+    "description": "Product 8 description",
+    "image": "https://www.example.com/product8.jpg",
+    "price": "PR-8"
+  },
+  {
+    "id": "PROD-9",
+    "name": "Product 9",
+    "description": "Product 9 description",
+    "image": "https://www.example.com/product9.jpg",
+    "price": "PR-9"
+  },
+  {
+    "id": "PROD-10",
+    "name": "Product 10",
+    "description": "Product 10 description",
+    "image": "https://www.example.com/product10.jpg",
+    "price": "PR-10"
+  },
+  {
+    "id": "PROD-11",
+    "name": "Product 11",
+    "description": "Product 11 description",
+    "image": "https://www.example.com/product11.jpg",
+    "price": "PR-11"
+  },
+  {
+    "id": "PROD-12",
+    "name": "Product 12",
+    "description": "Product 12 description",
+    "image": "https://www.example.com/product12.jpg",
+    "price": "PR-12"
+  },
+  {
+    "id": "PROD-13",
+    "name": "Product 13",
+    "description": "Product 13 description",
+    "image": "https://www.example.com/product13.jpg",
+    "price": "PR-13"
+  },
+  {
+    "id": "PROD-14",
+    "name": "Product 14",
+    "description": "Product 14 description",
+    "image": "https://www.example.com/product14.jpg",
+    "price": "PR-14"
+  }
+]

@@ -6,9 +6,13 @@
   "scripts": {
     "start": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
-    "start:prod": "node dist/index.js"
+    "start:prod": "node dist/index.js",
+    "generate": "graphql-codegen"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^3.3.0",
+    "@graphql-codegen/typescript": "^3.0.3",
+    "@graphql-codegen/typescript-resolvers": "^3.2.0",
     "@tsconfig/node18": "^2.0.0",
     "@types/node": "^18.15.11",
     "nodemon": "^2.0.22",

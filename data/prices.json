@@ -1,0 +1,117 @@
+[
+  {
+    "id": "PR-1",
+    "price": 2.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-2",
+    "price": 4.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-3",
+    "price": 2.49,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-4",
+    "price": 0.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-5",
+    "price": 7.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-6",
+    "price": 9.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-7",
+    "price": 1.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-8",
+    "price": 3.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-9",
+    "price": 5.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-10",
+    "price": 6.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-11",
+    "price": 8.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-12",
+    "price": 10.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-13",
+    "price": 11.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-14",
+    "price": 12.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-15",
+    "price": 13.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-16",
+    "price": 14.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-17",
+    "price": 15.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-18",
+    "price": 16.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-19",
+    "price": 17.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-20",
+    "price": 18.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-21",
+    "price": 19.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-22",
+    "price": 20.99,
+    "currency": "EUR"
+  },
+  {
+    "id": "PR-23",
+    "price": 21.99,
+    "currency": "EUR"
+  }
+]
