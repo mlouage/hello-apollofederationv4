@@ -13,17 +13,20 @@ const resolvers: Resolvers = {
   Query: {
     users: () => users,
     user: (_, { id }) => users.find((user) => user.id === id),
-    products: () => products.map((product) => {
-      const price = prices.find((price) => price.id === product.price);
+    products: () => {
+      const productsWithPrice = products
+        //.filter((product) => prices.some((price) => price.id === product.price))
+        .map((product) => {
+          const price = prices.find((p) => p.id === product.price);
 
-      return {
-        id: product.id,
-        name: product.name,
-        desription: product.description,
-        image: product.image,
-        price: price,
-      }
-    }),
+          if (price != undefined) {
+            var result = { ...product, price };
+            return result;
+          }
+        });
+
+      return productsWithPrice;
+    },
   },
 };
 

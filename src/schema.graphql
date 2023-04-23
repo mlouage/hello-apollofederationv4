@@ -16,7 +16,6 @@ type Price {
   id: ID!
   price: Float!
   currency: String!
-  product: Product!
 }
 
 type Query {

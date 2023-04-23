@@ -19,7 +19,6 @@ export type Price = {
   currency: Scalars['String'];
   id: Scalars['ID'];
   price: Scalars['Float'];
-  product: Product;
 };
 
 export type Product = {
@@ -149,7 +148,6 @@ export type PriceResolvers<ContextType = any, ParentType extends ResolversParent
   currency?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   price?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
-  product?: Resolver<ResolversTypes['Product'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 }>;
 
