@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { Price } from "../src/resolvers-types";
+import { Price, User, Product } from "../src/resolvers-types";
 
 describe("users", () => {
   it("can_map_to_generated_user_type", () => {
-    
+
     // arrange
-    const prices = [
+    const pricesData = [
       {
         id: "PR-1",
         price: 2.99,
@@ -23,7 +23,7 @@ describe("users", () => {
       },
     ];
 
-    const products = [
+    const productsData = [
       {
         id: "PROD-1",
         name: "Product 1",
@@ -47,7 +47,7 @@ describe("users", () => {
       },
     ];
 
-    const users = [
+    const usersData = [
       {
         "id": "1",
         "name": "John Doe",
@@ -77,6 +77,32 @@ describe("users", () => {
         ]
       }
     ]
+
+    // act
+    const prices: Price[] = pricesData.map(price => {
+      return {
+        id: price.id,
+        price: price.price,
+        currency: price.currency
+      }
+    });
+
+    const products: Product[] = productsData
+      .map(product => {
+        const price = prices.find(p => p.id === product.price);
+        if (price != undefined) {
+          return { ...product, price };
+        }
+      })
+      .filter(product => product != undefined) as Product[];
+
+    const users: User[] = usersData.map(user => {
+      const favorites = products.filter(product => user.favorites.includes(product.id));
+      return { ...user, favorites };
+    });
+
+    // assert
+    expect(users.length).eq(3);
 
   });
 });
