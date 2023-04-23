@@ -2,16 +2,31 @@
   {
     "id": "1",
     "name": "John Doe",
-    "email": "john@example.com"
+    "email": "john@example.com",
+    "favorites": [
+      "PROD-3",
+      "PROD-5",
+      "PROD-8",
+      "PROD-10"
+    ]
   },
   {
     "id": "2",
     "name": "Jane Doe",
-    "email": "jane@example.com"
+    "email": "jane@example.com",
+    "favorites": [
+      "PROD-7",
+      "PROD-9",
+      "PROD-13"
+    ]
   },
   {
     "id": "3",
     "name": "Mike Doe",
-    "email": "mike@example.com"
+    "email": "mike@example.com",
+    "favorites": [
+      "PROD-2",
+      "PROD-12"
+    ]
   }
 ]

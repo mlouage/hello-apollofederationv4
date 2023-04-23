@@ -11,7 +11,26 @@ const typeDefs = readFileSync("./src/schema.graphql", "utf8");
 
 const resolvers: Resolvers = {
   Query: {
-    users: () => users,
+    users: () => {
+      const usersWithProducts = users.map((user) => {
+        const userProducts = products.filter(
+          (product) => user.favorites.includes(product.id)
+        );
+
+        const userProductsWithPrice = userProducts.map((product) => {
+          const price = prices.find((p) => p.id === product.price);
+
+          if (price != undefined) {
+            var result = { ...product, price };
+            return result;
+          }
+        });
+
+        return { ...user, products: userProductsWithPrice };
+      });
+
+      return usersWithProducts;
+    },
     user: (_, { id }) => users.find((user) => user.id === id),
     products: () => {
       const productsWithPrice = products

@@ -46,6 +46,7 @@ export type QueryUserArgs = {
 export type User = {
   __typename?: 'User';
   email: Scalars['String'];
+  favorites?: Maybe<Array<Product>>;
   id: Scalars['ID'];
   name: Scalars['String'];
 };
@@ -169,6 +170,7 @@ export type QueryResolvers<ContextType = any, ParentType extends ResolversParent
 
 export type UserResolvers<ContextType = any, ParentType extends ResolversParentTypes['User'] = ResolversParentTypes['User']> = ResolversObject<{
   email?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  favorites?: Resolver<Maybe<Array<ResolversTypes['Product']>>, ParentType, ContextType>;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
