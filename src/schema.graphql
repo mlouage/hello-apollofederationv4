@@ -22,4 +22,6 @@ type Price {
 type Query {
   users: [User]
   user(id: ID!): User
+  products: [Product]
+  prices: [Price]
 }
